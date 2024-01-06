@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="/image/avi-file.png" type="image/x-icon">
+    <!-- Bootstrap CSS link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        
+
+      
+
+     
+      }
+     
+
+      .contact-container {
+        max-width: 400px;
+        margin: 50px auto;
+
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+        background: rgb(42, 197, 242);
+        background: linear-gradient(
+          0deg,
+          rgba(42, 197, 242, 1) 0%,
+          rgba(202, 45, 253, 1) 100%
+        );
+      }
+
+      .business-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .contact-form {
+        padding: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+      .btn {
+        background-color: rgba(202, 45, 253, 1);
+      }
+    </style>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="container contact-container">
+      <h1 class="text-center">Contact Us</h1>
+
+      <div class="row d-flex align-items-stretch">
+        <div class="col-md-6">
+          <img
+            src="/image/ap1.jpg"
+            alt="Business Image"
+            class="business-image"
+          />
+        </div>
+
+        <div class="col-md-6 contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Enter your message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS link -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/common/header.html");
+         
+        $("#footer").load("/common/footer.html")
+      });
+    </script>
+  </body>
+</html>
